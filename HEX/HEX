@@ -4,4 +4,4 @@ bytes = bytes.fromhex(hex)
 
 flag = bytes.decode("ascii")
 
-print("Flag:", flag)
+print("flag:", flag)
