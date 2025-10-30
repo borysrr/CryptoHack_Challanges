@@ -10,7 +10,6 @@ for o in output_file:
     else:
         string += "0"
 
-# Split into bytes and convert to ASCII
 flag = ""
 for i in range(0, len(string), 8):
     flag += chr(int(string[i:i+8], 2))
