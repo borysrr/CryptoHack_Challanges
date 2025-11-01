@@ -1,8 +1,0 @@
-string_Text = "label"
-int_Key = 13 
-
-print("crypto{", end="")
-for char in string_Text:
-    result = chr(ord(char) ^ int_Key) 
-    print(result, end="")
-print("}")
