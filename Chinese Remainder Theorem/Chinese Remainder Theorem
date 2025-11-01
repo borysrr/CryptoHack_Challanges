@@ -1,0 +1,18 @@
+#list of congruences
+given = [
+    (2, 5),
+    (3, 11),
+    (5, 17)
+]
+
+#starts with first congruence
+a, mod_val = given[0]
+
+#loop through rest of congruences
+for rem, mod in given[1:]:
+    k = ((rem - a) * pow(mod_val, -1, mod)) % mod
+    a = a + k * mod_val
+    #update modulus
+    mod_val *= mod
+
+print(a)
