@@ -1,0 +1,6 @@
+p = 13
+a = 3
+power = p - 2
+
+# Fermats Little Theorem
+print(pow(a, power, p))
