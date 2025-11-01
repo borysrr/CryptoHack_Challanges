@@ -1,0 +1,11 @@
+p = 26513
+q = 32321
+
+def egcd(a, b):
+    if b == 0:
+        return a, 1, 0
+    else:
+        gcd, u, v = egcd(b, a % b)
+        return gcd, v, u - (a // b) * v
+
+print(min(egcd(p, q)))
